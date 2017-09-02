@@ -43,6 +43,42 @@
 			.me {
 			  color: #000;
 			}
+			
+			.typed-cursor {
+				/*color: #fff;*/
+				opacity: 1;
+				-webkit-animation: blink 0.7s infinite;
+				-moz-animation: blink 0.7s infinite;
+				animation: blink 0.7s infinite;
+			}
+			
+			@keyframes blink{
+			  0% { opacity:1; }
+			  50% { opacity:0; }
+			  100% { opacity:1; }
+			}
+
+			@-webkit-keyframes blink{
+			  0% { opacity:1; }
+			  50% { opacity:0; }
+			  100% { opacity:1; }
+			}
+
+			@-moz-keyframes blink{
+			  0% { opacity:1; }
+			  50% { opacity:0; }
+			  100% { opacity:1; }
+			}
+			
+			a.clean, a:hover.clean, a:visited.clean{
+				text-decoration:none
+			}
+			a.hiddenLink, a:hover.hiddenLink, a:visited.hiddenLink{
+				color: #000;
+			}
+			a.plain, a:hover.plain, a:visited.plain{
+				text-decoration:underline
+			}
 		</style>
 	<!-- End Message CSS -->
   </head>
@@ -60,8 +96,11 @@
           strings: [
 				"Hello, Good to See you!^2000",
 				"Let me Introduce myself, <br>My name is Noah.^2000",
-				"I am young, passionate and devoted Programmer^4000",
-				"I program in many Languages, Like JavaScript, PHP, HTML and othes too!"],
+				"I'm a young, passionate and devoted Programmer!^4000",
+				"I program in many Languages, Like JavaScript, PHP, HTML and more!^2000",
+				"Well if you need me,<br> I'll be on the Internet somewhere,^1000<br> Just <a class=\"plain hiddenLink\" href=\"https://twitter.com/n_halstead3\">Tweet</a> me!^6000",
+				"Have fun on the website!^10000"
+			],
           smartBackspace: true,
           typeSpeed: 20,
           backDelay: 2000,
