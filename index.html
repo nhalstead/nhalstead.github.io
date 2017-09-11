@@ -88,8 +88,38 @@
 			}
 		</style>
 	<!-- End Message CSS -->
+	<!-- Start Floating Box  -->
+            #floatBoxSmall {
+		    position: fixed;
+		    bottom: 0px;
+		    font-size: 12px;
+		    color: rgb(51, 51, 51);
+		    font-family: Arial, Helvetica, sans-serif;
+		    cursor: default;
+		    z-index: 9999;
+		    line-height: 1;
+		    vertical-align: baseline;
+		    user-select: none;
+		    background: rgb(241, 237, 237);
+		    padding: 5px;
+		    border-width: 1px 1px 0px;
+		    border-style: solid solid solid;
+		    border-color: rgb(145, 145, 145) rgb(145, 145, 145) rgb(145, 145, 145);
+		    border-image: initial;
+		    border-bottom: 0px;
+		    outline: 0px;
+		    margin: 0px;
+		}
+		#floatBoxSmall .right {
+		    right: 1%;
+		}
+	<!-- End Floating Box --> 
   </head>
   <body>
+    <!-- GitHub Fork -->
+	  <a href="https://github.com/nhalstead"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+    <!-- END: GitHub Fork -->
+	  
     <!--<div class="me">This is Hold Text</div>-->
     <div id="head">
 		<section class="jumbotron text-center">
@@ -115,10 +145,14 @@
           loop: !0
         });
     </script>
-	<!--<hr style="margin-bottom:5px !important; margin-top:5px !important; " />-->
-	<hr>
-	<div id="content">
-		<div class="center h3">Sorry to tell you but, No Content to show, yet!</div>
-	</div>
+    <!--<hr style="margin-bottom:5px !important; margin-top:5px !important; " />-->
+    <hr>
+    <div id="content">
+        <div class="center h3">Sorry to tell you but, No Content to show, yet!</div>
+    </div>
+    
+    <div id="floatBoxSmall" class="right"><a aria-label="Follow @nhaslstead on GitHub" href="https://github.com/nhaslstead" class="github-button">Follow @nhaslstead</a></div>
+    <!-- GitHub Button: https://buttons.github.io/ -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>
